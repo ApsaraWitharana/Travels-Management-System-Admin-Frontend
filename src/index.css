@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Animation for the buttons */
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+        background-color: #4CAF50; /* Default color for "Add" button */
+    }
+    50% {
+        transform: scale(1.05);
+        background-color: #388E3C; /* Green shade */
+    }
+    100% {
+        transform: scale(1);
+        background-color: #4CAF50; /* Default color for "Add" button */
+    }
+}
+
+.add-button {
+    background-color: #FFA500; /* Orange color */
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: buttonHover 0.6s infinite;
+}
+
+.add-button:hover {
+    background-color: #FF8C00; /* Darker orange on hover */
+    transform: scale(1.05);
+}
+
+/* Style for the update button */
+.update-button {
+    background-color: #4CAF50; /* Green color */
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.update-button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+.update-button:active {
+    transform: scale(1);
+}
