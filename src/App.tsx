@@ -137,6 +137,11 @@ function App() {
     }
   };
 
+  const handleEdit = (tour: Tour) => {
+    setSelectedTour(tour); // Set selected tour data
+    setShowForm(true);      // Open the form
+  };
+
   const handleDeleteTour = async (id: string) => {
     if (!window.confirm('Are you sure you want to delete this tour?')) return;
     try {
@@ -252,8 +257,9 @@ function App() {
                           <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                             <button
                                 onClick={() => {
-                                  setSelectedTour(tour);
+                                  handleEdit(tour);
                                   setShowForm(true);
+
                                 }}
                                 className="text-blue-600 hover:text-blue-900 mr-3 rounded-full"
                             >
@@ -293,9 +299,14 @@ function App() {
 
         {showForm && (
             <TourForm
-                onClose={() => setShowForm(false)}
+                onClose={() => {
+                  setShowForm(false);
+                  setSelectedTour(null);
+                }}
                 onSubmit={selectedTour ? handleUpdateTour : handleAddTour}
                 tour={selectedTour}
+                initialData={selectedTour || undefined}
+                isEdit={!!selectedTour}
             />
         )}
         <Footer />
