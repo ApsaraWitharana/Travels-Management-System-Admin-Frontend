@@ -1,50 +1,130 @@
-# React + TypeScript + Vite
+# Tour Management System Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<a href="https://git.io/typing-svg">     
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=50&pause=1000&center=true&vCenter=true&color=FFA500&width=1000&height=70&lines=TRAVEL+MANAGEMENT+ADMIN+PANEL" alt="Orange Themed Admin Panel" />
+</a>
 
-Currently, two official plugins are available:
+## 🌍 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is the admin panel for the Tour Management System, built using React, Tailwind CSS, and Axios. It provides functionalities for adding, updating, deleting, and retrieving tour-related data.
 
-## Expanding the ESLint configuration
+## Features
+- Add new tours
+- Update existing tours
+- Delete tours
+- Retrieve all tours
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technology Stack
+- **Frontend**: React, Tailwind CSS, Axios
+- **Build Tool**: Vite
+- **Linting**: ESLint
+- **Type Checking**: TypeScript
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+Make sure you have the following installed:
+- Node.js (latest stable version)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+   ```sh
+   https://github.com/ApsaraWitharana/Travels-Management-System-Admin-Frontend.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd tour-management-system-admin
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+### Running the Project
+To start the development server, run:
+```sh
+npm run dev
+```
+This will start the project on a local server and provide a development environment.
+
+### Building the Project
+To create a production build, run:
+```sh
+npm run build
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Linting the Code
+To check for linting issues, run:
+```sh
+npm run lint
 ```
+
+### Preview the Build
+To preview the production build, run:
+```sh
+npm run preview
+```
+
+## Project Structure
+```
+/tour-management-system-admin
+│── src
+│   ├── components  # Reusable components
+│   ├── pages       # Application pages
+│   ├── services    # API calls with Axios
+│   ├── styles      # Tailwind configurations
+│   ├── App.tsx     # Main App component
+│   ├── main.tsx    # React entry point
+│── public          # Static assets
+│── package.json    # Project dependencies
+│── tailwind.config.js  # Tailwind configuration
+│── tsconfig.json   # TypeScript configuration
+│── vite.config.js  # Vite configuration
+```
+
+## API Integration
+This project uses Axios for handling API requests. Below is an example of how an API request is made:
+```tsx
+import axios from 'axios';
+
+const fetchTours = async () => {
+  try {
+    const response = await axios.get('/api/tours');
+    console.log(response.data);
+  } catch (error) {
+    console.error('Error fetching tours:', error);
+  }
+};
+```
+
+## Screenshots 
+
+### Dashboard
+![WhatsApp Image 2025-02-18 at 16 21 39_689a2d89](https://github.com/user-attachments/assets/a7501bb1-a92d-4c44-8121-e3eea270f658)
+
+![WhatsApp Image 2025-02-18 at 16 22 11_eb98e94d](https://github.com/user-attachments/assets/c76670dd-d931-44aa-8ad0-a0a7b4c833e4)
+
+
+## Acknowledgments
+- **React**: For building the UI
+- **Tailwind CSS**: For styling
+- **Axios**: For API requests
+- **Vite**: For fast build and development
+
+
+## 💜License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For inquiries or collaboration:
+- **Author:** [Sachini Apsara](https://github.com/ApsaraWitharana)
+  
+<div align="center">
+    © 2025 All Rights Reserved, Designed By Sachini Apsara
+</div>
+
+
+⭐ **Feel free to contribute, star the repo, and explore more!**
