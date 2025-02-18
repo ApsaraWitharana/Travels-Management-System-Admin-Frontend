@@ -94,7 +94,7 @@ export const TourForm: React.FC<TourFormProps> = ({
                   name="title"
                   value={formData.title}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-full border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
               />
             </div>
@@ -108,7 +108,7 @@ export const TourForm: React.FC<TourFormProps> = ({
                   name="city"
                   value={formData.city}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-full border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
               />
             </div>
@@ -122,7 +122,7 @@ export const TourForm: React.FC<TourFormProps> = ({
                   name="address"
                   value={formData.address}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-full border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
               />
             </div>
@@ -136,7 +136,7 @@ export const TourForm: React.FC<TourFormProps> = ({
                   name="distance"
                   value={formData.distance}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-full border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
                   min="0"
               />
@@ -151,7 +151,7 @@ export const TourForm: React.FC<TourFormProps> = ({
                   name="price"
                   value={formData.price}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-full border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
                   min="0"
               />
@@ -166,7 +166,7 @@ export const TourForm: React.FC<TourFormProps> = ({
                   name="maxGroupSize"
                   value={formData.maxGroupSize}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-full border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
                   min="1"
               />
@@ -181,7 +181,7 @@ export const TourForm: React.FC<TourFormProps> = ({
                   name="photo"
                   accept="image/*"
                   onChange={(e) => handleFileChange(e)}
-                  className="mt-1 block w-full rounded-full border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
 
@@ -194,7 +194,7 @@ export const TourForm: React.FC<TourFormProps> = ({
                   value={formData.desc}
                   onChange={handleChange}
                   rows={4}
-                  className="mt-1 block w-full rounded-full border-gray-300 shadow-sm  focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm  focus:border-blue-500 focus:ring-blue-500"
                   required
               />
             </div>

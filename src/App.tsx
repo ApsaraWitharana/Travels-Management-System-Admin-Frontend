@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Plus, Search, Trash2, Edit2 } from 'lucide-react';
@@ -6,8 +6,6 @@ import { Tour, TourFormData } from './types/Tour';
 import { TourForm } from './components/TourForm';
 import './style/common.css';
 import Footer from "./components/Footer.tsx";
-import Header from "./components/Header.tsx";
-
 
 const API_URL = 'http://localhost:8080/api/v1';
 const PAGE_SIZE = 20; // Number of items per page
@@ -306,18 +304,4 @@ function App() {
 }
 
 export default App;
-=======
 
-import './App.css'
-
-function App() {
-
-  return (
-    <>
-
-    </>
-  )
-}
-
-export default App
->>>>>>> f9700df37d881075e518d42bb5488fb5a1e13232
