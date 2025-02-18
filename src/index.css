@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 /* Animation for the buttons */
 @keyframes buttonHover {
     0% {
@@ -58,3 +59,5 @@
 .update-button:active {
     transform: scale(1);
 }
+=======
+>>>>>>> f9700df37d881075e518d42bb5488fb5a1e13232

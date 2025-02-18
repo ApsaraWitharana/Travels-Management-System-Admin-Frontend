@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Plus, Search, Trash2, Edit2 } from 'lucide-react';
@@ -305,3 +306,18 @@ function App() {
 }
 
 export default App;
+=======
+
+import './App.css'
+
+function App() {
+
+  return (
+    <>
+
+    </>
+  )
+}
+
+export default App
+>>>>>>> f9700df37d881075e518d42bb5488fb5a1e13232
