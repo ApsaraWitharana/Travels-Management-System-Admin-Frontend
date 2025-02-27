@@ -32,11 +32,15 @@ Make sure you have the following installed:
    ```sh
    https://github.com/ApsaraWitharana/Travels-Management-System-Admin-Frontend.git
    ```
-2. Navigate to the project directory:
+2. Backend repository:
+   ```sh
+   https://github.com/ApsaraWitharana/Travels-Management-System-Backend.git
+   ```   
+4. Navigate to the project directory:
    ```sh
    cd tour-management-system-admin
    ```
-3. Install dependencies:
+5. Install dependencies:
    ```sh
    npm install
    ```
